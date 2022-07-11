@@ -120,6 +120,34 @@ html{
     min-height: 200px;
 }
 
+#bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+#bars li {
+    background-color: var(--primary-background__color);
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+#bars li:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+#bars li a{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    display: block;
+    
+}
+
 .subcontainer{
     width: 80%;
 
