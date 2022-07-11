@@ -1,0 +1,285 @@
+:root{
+    --primary-background__color: #8ecae6;
+    --primary-word__color: blue;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#main{
+    display: flex;
+    flex-direction: column;
+}
+
+#container{
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+}
+
+#nav {
+    display: inline-block;
+}
+
+#header{
+    height: 35px;
+    background-color: var(--primary-background__color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+#nav, .subnav{
+    list-style-type: none;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a{
+    color: white;
+}
+
+#nav li a {
+    text-decoration: none;
+    line-height: 35px;
+    padding: 0 24px;
+    display: block;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav > li:hover > a, 
+#nav .subnav li:hover {
+    color: black;
+    background-color: #ccc;
+}
+
+#nav .subnav {
+    min-width: 160px;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+#nav .subnav a {
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+#nav .nav-arrow-down {
+    font-size: 14px;
+}
+
+#header .login {
+    color: white;
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+    line-height: 35px;
+}
+
+#header .login:hover {
+    background-color: #f44336;
+}
+
+#header .signup {
+    color: white;
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+    line-height: 35px;
+}
+
+#header .signup:hover {
+    background-color: #f44336;
+}
+
+#sidebar{
+    width: 20%;
+    background-color:aqua;
+    min-height: 200px;
+}
+
+.subcontainer{
+    width: 80%;
+
+}
+
+#slider{
+    min-height: 400px;
+    background-color:bisque;
+}
+
+
+#content{
+    background-color: beige;
+    height: 1000px;
+}
+
+#footer{
+    min-height: 100px;
+    background-color: #ccc;
+}
+
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+}
+
+.modal__overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal__body{    
+    background-color: white;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    border-radius: 5px;
+}
+
+.auth-form{
+    width: 500px;
+}
+
+.auth-form__container{
+    
+}
+
+.auth-form__header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 16px;
+}
+
+.auth-form__heading{
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+}
+
+.auth-form_switch-btn{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--primary-word__color);
+    cursor: pointer;
+}
+
+.auth-form__form{
+    
+}
+
+.auth-form__input{
+    width: 100%;
+    height: 40px;
+    margin-top: 16px;
+    padding: 0 12px;
+    font-size: 18px;
+    border: 1px solid var(--primary-background__color);
+    border-radius: 2px;  
+    outline: none;  
+}
+
+.auth-form__input:focus {
+    border: 2px solid #888;
+
+}
+
+.auth-form__aside{
+    margin-top: 18px;
+    
+}
+
+.auth-form__policy-text{
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+}
+
+.auth-form__text-link{
+    color: var(--primary-word__color);
+    text-decoration: none;
+}
+
+.auth-form__controls{
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.btn{
+    min-width: 130px;
+    height: 30px;
+    text-decoration: none;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    padding: 0;
+    outline: none;
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn.btn--primary{
+    color: var(--primary-word__color);
+    background-color: var(--primary-background__color);
+}
+
+.btn:hover {
+    background-color: rgba(0,0,0,0.05);
+}
+
+.auth-form__socials{
+    margin-top: 24px;
+    background-color: #f5f5f5;
+    padding: 16px 36px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn--with-icon:first-child{
+    background-color: #3A5A98;
+    color: white;
+}
+
+.auth-socials__icon {
+    padding-right: 24px;
+}
+
+
+.btn--with-icon:last-child{
+    background-color: white;
+    color: black;
+}
