@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <link rel="stylesheet" href="./assets/fonts/themify-icons/themify-icons.css">
     <link rel="stylesheet" href="./assets/fontawesome-free-6.1.1-web/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="./assets/js/index.js"></script>
 </head>
 <body>
     <div id="main">
@@ -67,14 +69,15 @@
         </div>
     </div>
 
-    <!-- <div class="modal">
+    <div class="modal">
         <div class="modal__overlay"></div>
         <div class="modal__body">
-            <div class="auth-form">
+            <!-- Register -->
+            <div class="auth-form register-form">
                 <div class="auth-form__container">
                     <div class="auth-form__header">
                         <h3 class="auth-form__heading">Đăng ký</h3>
-                        <span class="auth-form_switch-btn">Đăng nhập</span>
+                        <span class="auth-form_switch-btn auth-form_swith-login">Đăng nhập</span>
                     </div>
 
                     <div class="auth-form__form">
@@ -99,24 +102,77 @@
                     </div>
     
                     <div class="auth-form__controls">
-                        <button class="btn">TRỞ LẠI</button>
+                        <button class="btn btn--normal btn-back">TRỞ LẠI</button>
                         <button class="btn btn--primary">ĐĂNG KÝ</button>
                     </div>
                 
                     <div class="auth-form__socials">
-                        <a href="" class="btn btn--with-icon">
-                            <i class="auth-socials__icon fa-brands fa-facebook-square"></i>
-                            Facebook
+                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials--icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form__socials--title">
+                                Kết nối Facebook
+                            </span>
                         </a>
     
-                        <a href="" class="btn btn--with-icon">
-                            <i class="auth-socials__icon fa-brands fa-google"></i>
-                            Google
+                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials--icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials--title">
+                                Kết nối Google
+                            </span>
                         </a>
                     </div>
                 </div>
-            </div>   
+            </div> 
+            
+            <!-- Login -->
+            <div class="auth-form login-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng nhập</h3>
+                        <span class="auth-form_switch-btn auth-form_swith-register">Đăng ký</span>
+                    </div>
+
+                    <div class="auth-form__form">
+                        <div class="auth-form__group">
+                            <input type="text" class="auth-form__input" placeholder="Nhập email">
+                        </div>
+                        <div class="auth-form__group">
+                            <input type="password" class="auth-form__input" placeholder="Nhập mật khẩu">
+                        </div>                        
+                    </div>
+    
+                    <div class="auth-form__aside">
+                        <p class="auth-form__help">                            
+                            <a href="" class = "auth-form__help--link auth-form__help--forgot">Quên mật khẩu</a>
+                            <span class="auth-form__help--separate"></span>
+                            <a href="" class = "auth-form__help--link">Cần trợ giúp?</a>                     
+                        </p>
+
+                    </div>
+    
+                    <div class="auth-form__controls">
+                        <button class="btn btn--normal btn-back">TRỞ LẠI</button>
+                        <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                    </div>
+                
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials--icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form__socials--title">
+                                Facebook
+                            </span>
+                        </a>
+    
+                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials--icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials--title">
+                                Google
+                            </span>
+                        </a>
+                    </div>
+                </div>
+            </div> 
         </div>
-    </div> -->
+    </div>
 </body>
 </html>
