@@ -1,5 +1,5 @@
 :root{
-    --primary-background__color: #8ecae6;
+    --primary-background__color: #007cba;
     --primary-word__color: blue;
 }
 
@@ -173,7 +173,7 @@ html{
 }
 
 #content{    
-    background-color: beige;
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -182,6 +182,7 @@ html{
 div.tinTuc {
     padding: 10px;
     width: 100%;
+    height: 80px;
 }
 
 div.tinTuc p {
@@ -212,6 +213,8 @@ div.tinTuc p::after {
     justify-content: center;
     display: flex;  
     padding: 2px;
+    border-bottom: solid 2px #000;
+    margin-top: 5px;
 }
 
 .post a.imagePost {
@@ -221,6 +224,7 @@ div.tinTuc p::after {
 .post a img {
     display: block;
     width: 100%;
+    
 }
 
 .content {
@@ -229,6 +233,7 @@ div.tinTuc p::after {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 p.title {
@@ -249,15 +254,26 @@ p.title {
     width: 20%;
     display: flex;
     flex-direction: column;
+    position: sticky;
+    align-self: flex-start;
+    top: 0;
+    margin-left: 30px;
+   
 }
+
+.boxs a:first-child {
+    margin-top: 80px;
+}
+
 
 .box {
     width: 100%;
     display: flex;
     height: 130px;
     align-items: center;
-    background-color: #888;
+    background-color: var(--primary-background__color);
     margin-top: 5px;
+    border-radius: 5px;
 }
 
 .box div:first-child {
@@ -268,16 +284,22 @@ p.title {
     text-align: center;
     padding: 10px;
     width: 70%;
+    
+}
+
+.box div p {
+    color: #fff;
 }
 
 .box div i {
     font-size: 70px;
-    color: #000;
+    color: #fff;
 }
 #footer{
+    margin-top: 20px;
    display: flex;
     min-height: 100px;
-    background-color: #ccc;
+    background-color: var(--primary-background__color);
     justify-content: center;
     align-items: center;
     height: 300px;
@@ -290,6 +312,9 @@ p.title {
     text-align: center;
 }
 
+.footerItem {
+    color: #fff;
+}
 .footerItem div p {
     display: inline;
 }
@@ -305,8 +330,13 @@ p.title {
     font-size: 50px;
 }
 
+.footerItem a {
+    color: #fff;
+}
+
 .footerItem div {
     padding: 10px;
+    
 }
 
 .mxh {
@@ -314,7 +344,7 @@ p.title {
 }
 
 .mxh i {
-    color: #000;
+    color: #fff;
 }
 
 @keyframes fadeIn {
