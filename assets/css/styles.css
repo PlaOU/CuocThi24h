@@ -165,14 +165,15 @@ html{
 
 #slider{
     min-height: 400px;
-    background-color:bisque;
 }
 
+#slider img{
+    width: 100vw;
+    height: 700px;
+}
 
-#content{
-    
-    background-color: beige;
-  
+#content{    
+    background-color: #fff;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -223,6 +224,7 @@ div.tinTuc p::after {
 .post a img {
     display: block;
     width: 100%;
+    
 }
 
 .content {
@@ -546,6 +548,32 @@ p.title {
     color: var(--primary-word__color);
 }
 
+/* user */
+#header .auth-nav{
+    color: white;
+    float: right;
+    padding: 0 21px;
+    cursor: pointer;
+    line-height: 35px;
+}
+
+#header .auth-nav:hover {
+    background-color: #f44336;
+}
+
+#header .user > img{
+    width: 20px;
+    height: 20px;
+}
+
+.empty_field::-webkit-input-placeholder{
+    font-size: 16px;
+    color: red;
+}
+
+
+/*  */
+
 .chat-window{
     width: 1200px;
     height: 700px;
@@ -636,4 +664,67 @@ div.status {
     height: 50px;
     width: 100%;
     cursor: pointer;
+}
+
+a{
+    cursor: pointer;
+}
+
+/* chat */
+.bubbleWrapper {
+    height: 450px;
+    overflow: scroll;
+	padding: 10px 10px;
+	display: flex;
+	justify-content: flex-end;
+	flex-direction: column;
+	align-self: flex-end;
+    color: #fff;
+}
+div[class *= inlineContainer] {
+  display: inline-flex;
+}
+.inlineContainer.own {
+  flex-direction: row-reverse;
+}
+.inlineIcon {
+  width:20px;
+  object-fit: contain;
+}
+div[class *= ownBubble] {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 14px 18px;
+    margin: 6px 8px;
+	background-color: #5b5377;
+	border-radius: 16px 16px 0 16px;
+	border: 1px solid #443f56;
+ 
+}
+div[class *= otherBubble] {
+	min-width: 60px;
+	max-width: 700px;
+	padding: 14px 18px;
+  margin: 6px 8px;
+	background-color: #6C8EA4;
+	border-radius: 16px 16px 16px 0;
+	border: 1px solid #54788e;
+  
+}
+.own {
+	align-self: flex-end;
+}
+.other {
+	align-self: flex-start;
+}
+span.own,
+span.other{
+  font-size: 14px;
+  color: grey;
+}
+
+input.submit{
+    margin-left: 3px;
+    font-size: 24px;
+    font-weight: bold;
 }
